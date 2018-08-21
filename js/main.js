@@ -1,6 +1,9 @@
 $('#submit-btn').click(function() {
 	event.preventDefault()
+
 	var city = $('#city-type').val().toLowerCase()
+	//turn all user input in capital letters to lowercase
+
 	if (city === 'nyc' || city === 'new york city') {
 		$('body').css('background-image','url(images/nyc.jpg)')
 	} else if (city === 'sf' || city === 'san francisco') {
@@ -14,4 +17,7 @@ $('#submit-btn').click(function() {
 	} else {
 		$('body').css('background-image','url(images/citipix_skyline.jpg)')
 	}
+
+	var city = $('#city-type').val('')
+	//after a user successfully types in a city, reset the input box value to nothing
 })
