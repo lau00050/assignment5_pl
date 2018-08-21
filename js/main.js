@@ -11,7 +11,7 @@ $('#submit-btn').click(function() {
 		$('body').css('background-image','url(images/austin.jpg)')
 	} else if (city === 'SYD' || city === 'Sydney') {
 		$('body').css('background-image','url(images/sydney.jpg)')
-	}	else {
+	} else {
 		$('body').css('background-image','url(images/citipix_skyline.jpg)')
 	}
 })
